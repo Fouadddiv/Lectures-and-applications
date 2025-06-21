@@ -1,0 +1,323 @@
+/* إعداد عام */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* الهيدر - شاشات كبيرة */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em 2.5em;
+}
+
+#logo {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+#lo {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin-top: 1.5em;
+}
+
+span {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  font-weight: 350;
+  color: gold;
+  border: solid 0.5em gold;
+  margin: 1.5em 1em 2em 1em;
+}
+
+#sd {
+  padding-left: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#sherche {
+  width: 12.5em;
+  height: 2.5em;
+  margin: 2em 0 0 3em;
+  border: solid 0.5em gold;
+  border-radius: 1.25em;
+  background-color: rgba(200, 200, 120, 0.5);
+  color: white;
+  display: flex;
+  justify-self: center;
+}
+
+.nvm {
+  background-color: transparent;
+  width: 12.5em;
+  margin: 2em 3em 0 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+#cours, #td, #dm {
+  width: 4.37em;
+  height: 4.37em;
+  border-radius: 50%;
+  background-color: rgba(200, 200, 120, 0.5);
+  color: white;
+  margin-left: 3em;
+}
+
+#dm {
+  margin-top: 2em;
+  margin-right: 1em;
+}
+
+#cours:focus, #td:focus, #dm:focus {
+  transform: scale(1.5);
+  background-color: #323;
+  color: #fff;
+  transition-delay: 1s;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.main {
+  width: 100vw;
+  margin-top: 10em;
+}
+
+.cards {
+  width: 18.75em;
+  height: 18.75em;
+  background-color: #ff004f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  margin-top: 2em;
+}
+
+.tay {
+  place-self: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.prt {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tprt {
+  background-color: black;
+  color: white;
+  width: 18em;
+  display: flex;
+  justify-content: center;
+  place-self: center;
+  margin: 2.5em auto 1em;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.tab {
+  width: 20em;
+  border: solid 0.5em black;
+  display: flex;
+  place-self: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.tab td {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  height: 2.5em;
+  background-color: black;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  margin-top: 5em;
+}
+
+/* شاشات صغيرة ومتوسطة */
+@media (max-width: 768px) {
+  .header {
+    display: none !important;
+  }
+
+  #menu-btn,
+  #sidebar {
+    display: flex !important;
+  }
+/*زر القائمة الجانبية*/
+#menu-btn{
+  background-color: black;
+  color: white;
+  width: 4em;
+  height: 4em;
+  border-radius: 50% 50%;
+  justify-self: right;
+  position: fixed;
+  z-index: 350;
+  top: 0;
+margin-top: 2em;
+margin-right: 2em;
+flex-direction: column;
+}
+/*تنسيق الصورة داخل الزر*/
+#nvs{
+  width: 2em;
+  height: 2em;
+  border-radius: 50% 50%;
+}
+/*تنسيق h1 داخل الزر*/
+#bd{
+  width: fit-content;
+}
+/*تنسيق القائمة الجنيبية*/
+#sidebar {
+  background-color: black;
+  color: white;
+width: 50vw;  
+height: 100vh;
+position: fixed;
+top: 0;
+z-index: 299;
+flex-direction: column;
+margin-right: -100%;
+}
+  .logo {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .sd {
+    flex-direction: column;
+    display: flex;
+  }
+
+  #sherche-clone {
+    width: 100%;
+    height: 2.5em;
+    border: solid 0.5em gold;
+    border-radius: 1.25em;
+    background-color: rgba(200, 200, 120, 0.5);
+    color: #fff;
+  }
+
+  #dm-clone {
+    width: 4.37em;
+    height: 4.37em;
+    border-radius: 50%;
+    background-color: rgba(200, 200, 120, 0.5);
+    color: white;
+  }
+
+  span {
+    border: solid 0.2em gold;
+  }
+
+  #lo, #sherche, span, .nvb {
+    place-self: center;
+  }
+
+  #sidebar a.nvb {
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color: #222;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+  }
+
+  #sidebar a.nvb:focus {
+    background-color: gold;
+    color: black;
+    border-radius: 50%;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .cards {
+    width: 35em;
+    height: 30em;
+    background-color: #f04;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  .tab {
+    width: 95%;
+    margin: 1em auto;
+    font-size: 1em;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 5px #aaa;
+  }
+
+  section {
+    padding: 2em 5%;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.95em;
+    background-color: #eee;
+    color: #000;
+    margin-top: 2em;
+  }
+}
+
+/* شاشات كبيرة */
+@media (min-width: 769px) {
+  .header {
+    display: flex !important;
+  }
+
+  #menu-btn,
+  #sidebar {
+    display: none !important;
+  }
+}
+
+/* عرض القائمة الجانبية */
+#sidebar.show {
+  margin-left: 10% !important;
+}
