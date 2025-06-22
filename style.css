@@ -253,7 +253,7 @@ margin-right: -100%;
     border-radius: 50%;
     background-color: rgba(200, 200, 120, 0.5);
     color: white;
-    margin-left: 3em;
+    margin-left: 8em;
   }
 
   span {
@@ -348,4 +348,11 @@ margin-right: -100%;
     width: 80vw;
     padding-left: 1em;
   }
+  .nvm{
+    margin-left: 2em;
+  }
+#dm-clone {
+  margin-left: 8em;
+}
+  
 }
