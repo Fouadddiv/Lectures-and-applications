@@ -330,12 +330,12 @@ margin-right: -100%;
 }
 @media (max-width:480px){
   .cards{
-    width: 18em;
+    width: 90vw;
     height: 18em;
     margin-left: 1em;
     margin-right: 1em;
   }
-  .
+  
   .tprt{
     width: 10em;
     display: flex;
