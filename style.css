@@ -227,6 +227,9 @@ margin-right: -100%;
   .sd {
     flex-direction: column;
     display: flex;
+    place-self: right;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 
   #sherche-clone {
@@ -253,14 +256,7 @@ margin-right: -100%;
   #lo, span, .nvb {
     place-self: center;
   }
-#sherche-clone {
-  width: 100%;
-  height: 2em;
-  background-color: rgba(200, 200, 120, 0.5);
-  color: white;
-  border: solid 0.5em gold;
-  border-radius: 20px;
-}
+
   #sidebar a.nvb {
     margin: 1em 0;
     padding: 0.5em;
